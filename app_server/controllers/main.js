@@ -1,7 +1,11 @@
 /* GET home page */
-const index = function(req, res){
-res.render('index', { title: 'Express' });
+const MainPage = function(req, res){
+res.render('index', { title: 'Main Page' });
+};
+const SignIn = function(req, res){
+res.render('SignIn', { title: 'Sign In' });
 };
 module.exports = {
-    index
+    MainPage,
+    SignIn
 };
