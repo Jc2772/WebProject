@@ -9,22 +9,13 @@ head
   
   nav.navbar.navbar-expand-lg.bg-dark(data-bs-theme='dark')
     .container-fluid
-      H1 Game Head
+      a.nav-link(href="/")
+       H1 Game Head
       button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarColor02' aria-controls='navbarColor02' aria-expanded='false' aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarColor02.collapse.navbar-collapse
         ul.navbar-nav.me-auto
           li.nav-item
-            a.nav-link.active(href='#')
-              | Home
-              span.visually-hidden (current)
-          li.nav-item
-            a.nav-link(href='#') Features
-          li.nav-item
-            a.nav-link(href='#') Pricing
-          li.nav-item
-            a.nav-link(href='#') About
-          li.nav-item.dropdown
             form.d-flex
               input.form-control.me-sm-2(type='search' placeholder='Search')
               button.btn.btn-secondary.my-2.my-sm-0(type='submit') Search
@@ -32,7 +23,7 @@ head
           li.nav-item
             a.nav-link(href='/SignIn') Sign in
           li.nav-item
-            a.nav-link(href='#') Sign up
+            a.nav-link(href='/SignUp') Sign up
             
   body
     block content
