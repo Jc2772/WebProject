@@ -1,6 +1,6 @@
 /* GET home page */
 const MainPage = function(req, res){
-res.render('MainPage', { title: 'Main Page' });
+res.render('MainPage', { title: 'Main Page',pageHeader:{title:'Game Reviews'} });
 };
 const SignIn = function(req, res){
 res.render('SignIn', { title: 'Sign In' });

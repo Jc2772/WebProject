@@ -1,6 +1,16 @@
 const mongoose = require('mongoose');
 const gameSchema = new mongoose.Schema({
-    game:String,
-    description:String,
-    avgscore:Double
-})
+    game:{
+        type: String,
+        required: true
+    },
+    description:{
+        type:String,
+        required: true
+    },
+    avgscore:{
+        type: Double,
+        default:0
+    }
+});
+mongoose.model('Game',gameSchema)

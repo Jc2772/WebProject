@@ -15,3 +15,5 @@ const connectDB = async () =>{
     }
 }
 connectDB()
+require('./games')
+require('./users')
