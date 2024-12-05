@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+require('./games');
+require('./users');
 
 const ConStr = "mongodb+srv://james:GameHead123@gamehead.jancw.mongodb.net/?retryWrites=true&w=majority&appName=GameHead";
 
@@ -15,5 +17,3 @@ const connectDB = async () =>{
     }
 }
 connectDB()
-require('./games')
-require('./users')
