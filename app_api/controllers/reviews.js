@@ -7,7 +7,9 @@ const reviewRead = function (req, res){
         if(!Review){
             res
             .status(400)
-            .json("Game Reviews are not found");
+            .json({
+                "message":"Game Reviews are not found"
+            });
         }
         else if (err){
             res

@@ -4,5 +4,7 @@ const ctrlReviews = require('../controllers/reviews');
 const ctrlusers = require('../controllers/users')
 
 router.get('/reviews',ctrlReviews.reviewShow)
-router.get('/users',ctrlusers)
+router.get('/userSignUp',ctrlusers.UserSignUp)
+router.get('/userSignIn',ctrlusers.UserSignIn)
+router.get('/userSignOut',ctrlusers.UserSignOut)
 modelule.exports(router)
