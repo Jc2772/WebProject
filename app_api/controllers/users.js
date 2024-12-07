@@ -61,9 +61,6 @@ UserSignIn = function(req,res){
         })
     }
 }
-UserSignOut = function(req,res){
-
-}
 modelule.exports = {
     UserCreate
 }
