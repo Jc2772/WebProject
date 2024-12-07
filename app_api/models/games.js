@@ -9,8 +9,8 @@ const gameSchema = new mongoose.Schema({
         required: true
     },
     avgscore:{
-        type: Double,
+        type: Number,
         default:0
     }
 });
-mongoose.model('Game',gameSchema)
+mongoose.model('Game',gameSchema);

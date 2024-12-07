@@ -6,7 +6,7 @@ import { Review } from './home-list/home-list.component';
   providedIn: 'root'
 })
 export class AngularGameReviewService {
-  private apiBaseurl = 'http://localhost:3000/api/';
+  private apiBaseurl = 'http://localhost:3000/api';
   public async getReviews(): Promise<Review[]> {
     const url : string = `${this.apiBaseurl}/reviews`;
     return this.http

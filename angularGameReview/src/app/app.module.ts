@@ -11,7 +11,8 @@ imports: [
     HomeListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [HomeListComponent]

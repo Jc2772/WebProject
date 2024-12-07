@@ -15,9 +15,6 @@ export class Review{
 })
 export class HomeListComponent implements OnInit {
   constructor(private angulargamereviewservice :AngularGameReviewService){}
-  ngOnInit(): void {
-    this.getReviews()
-  }
   reviews: Review[] = []
   private getReviews() : void{
     this.angulargamereviewservice
@@ -25,5 +22,8 @@ export class HomeListComponent implements OnInit {
     .then(foundReviews =>{
       this.reviews = foundReviews
     });
+  }
+  ngOnInit(): void {
+    this.getReviews()
   }
 }

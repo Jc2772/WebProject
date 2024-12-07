@@ -61,6 +61,7 @@ UserSignIn = function(req,res){
         })
     }
 }
-modelule.exports = {
-    UserCreate
+module.exports = {
+    UserSignUp,
+    UserSignIn
 }

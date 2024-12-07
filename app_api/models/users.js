@@ -1,16 +1,16 @@
 const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
-    game:{
+    username:{
         type: String,
         required: true
     },
-    description:{
+    email:{
         type:String,
         required: true
     },
-    avgscore:{
-        type: Double,
-        default:0
+    password:{
+        type: String,
+        required: true
     }
 });
-mongoose.model('Users',UserSchema)
+mongoose.model('Users',UserSchema);
