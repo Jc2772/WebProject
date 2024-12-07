@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularGameReview": {
+    "AngularGameReview": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angularGameReview:build:production"
+              "buildTarget": "AngularGameReview:build:production"
             },
             "development": {
-              "buildTarget": "angularGameReview:build:development"
+              "buildTarget": "AngularGameReview:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,8 +102,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "101ec8dc-8385-4938-8607-5fe20ad72c71"
   }
 }
