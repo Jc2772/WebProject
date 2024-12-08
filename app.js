@@ -1,7 +1,7 @@
+var db = require('./app_api/models/db');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-require('./app_api/models/db');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
@@ -16,7 +16,7 @@ app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ eSxtended: false }));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 

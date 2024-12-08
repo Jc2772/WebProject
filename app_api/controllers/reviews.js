@@ -1,13 +1,12 @@
-const mongoose = require('mongoose');
-require('../models/games');
-const Review = mongoose.model('Game')
-const reviewRead = function (req, res){
-    Review
-    .find()
-    .then((reviews) => {
-        if(reviews.length === 0){
+const mongoose = require('mongoose')
+const Reviews = mongoose.model('Game')
+
+const reviewRead = async function (req, res){
+    try{
+        const reviews = await Reviews.find()
+        if(reviews === 0){
             res
-            .status(400)
+            .status(404)
             .json({
                 "message":"Game Reviews are not found"
             });
@@ -15,17 +14,15 @@ const reviewRead = function (req, res){
         else{
             res
             .status(200)
-            .json(reviews)
+            .json(reviews);
         }
-    })
-    .catch((err) =>{
+    }
+    catch(err){
         res
             .status(500)
-            .json(err)
-    });
+            .json(err);
+    }
 };
-
-
 module.exports = {
     reviewRead
 };

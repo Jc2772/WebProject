@@ -22,7 +22,6 @@ const Reviews = {
     method : 'GET',
     json : {},
 };
-
 module.exports = {
     MainPage,
     SignIn,
