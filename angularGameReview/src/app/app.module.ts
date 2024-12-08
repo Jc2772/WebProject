@@ -17,4 +17,4 @@ imports: [
   providers: [],
   bootstrap: [HomeListComponent]
 })
-export class AppModule { }
+export class AppModule {}
