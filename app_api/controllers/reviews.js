@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const Review = mongoose.model('Game');
+const Review = mongoose.model('Game')
 const reviewRead = function (req, res){
     Review
-    .find()
-    .then((reviews) => {
-        if(!reviews){
+    .find({})
+    .then((Game) => {
+        if(!Game){
             res
             .status(400)
             .json({
@@ -14,7 +14,7 @@ const reviewRead = function (req, res){
         else{
             res
             .status(200)
-            .json(reviews)
+            .json(Game)
         }
     })
     .catch((err) =>{

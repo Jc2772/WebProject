@@ -1,1 +1,10 @@
-
+<p>test</p>
+<div>
+    <div *ngFor="let review of reviews">
+        <h3>
+            {{review.game}}
+        </h3>
+        <p>{{review.description}}</p>
+        <p>{{review.avgscore}}</p>
+    </div>
+</div>
