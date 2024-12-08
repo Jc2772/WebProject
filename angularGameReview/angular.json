@@ -38,7 +38,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/stylesheets/bootstrap.css",
+              "src/assets/stylesheets/bootstrap.min.css",
               "src/assets/stylesheets/font-awesome.min.css"
             ],
             "scripts": [
