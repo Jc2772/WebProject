@@ -1,10 +1,11 @@
-<p>test</p>
-<div>
-    <div *ngFor="let review of reviews">
-        <h3>
+<div class="card text-white bg-secondary mb-3" *ngFor="let review of reviews">
+    <div class="card-header">
+        <h3 class="card-title">
             {{review.game}}
         </h3>
-        <p>{{review.description}}</p>
-        <p>{{review.avgscore}}</p>
+    </div>
+    <div class="card-body">
+        <p class="card-text">{{review.description}}</p>
+        <p class="card-text">{{review.avgscore}}</p>
     </div>
 </div>
