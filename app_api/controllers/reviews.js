@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
-const Review = mongoose.model('Game',)
+require('../models/games');
+const Review = mongoose.model('Game')
 const reviewRead = function (req, res){
     Review
-    .find({})
+    .find()
     .then((reviews) => {
-        if(!reviews){
+        if(reviews.length === 0){
             res
             .status(400)
             .json({
