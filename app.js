@@ -4,6 +4,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose');
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 
 const indexRouter = require('./app_server/routes/index');
 const apiRouter = require('./app_api/routes/index')
@@ -25,6 +28,8 @@ app.use('/api', function(req, res, next) {
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
+app.use(passport.initialize());
+app.use(passport.session());
 app.use('/', indexRouter);
 app.use('/api',apiRouter)
 
@@ -44,5 +49,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+var Account = require('./')
+passport.use(new LocalStrategy(Account.SignIn()))
 module.exports = app;
