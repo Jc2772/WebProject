@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const passport = require('passport');
 const User = mongoose.model('Users');
 
 UserSignUp = function(req,res){
