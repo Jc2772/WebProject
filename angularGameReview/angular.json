@@ -41,10 +41,7 @@
               "src/assets/stylesheets/bootstrap.min.css",
               "src/assets/stylesheets/font-awesome.min.css"
             ],
-            "scripts": [
-              "src/assets/javascripts/bootstrap.min.js",
-              "src/assets/javascripts/jquery.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
