@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-center main flex_column">
+    <div class="card text-white bg-secondary mb-3" *ngFor="let review of reviews">
+        <div class="card-header">
+            <h3 class="card-title">
+                {{review.game}}
+            </h3>
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{review.description}}</p>
+            <p class="card-text">Score:{{review.avgscore}}</p>
+        </div>
+    </div>
+</div>
