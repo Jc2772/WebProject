@@ -10,7 +10,8 @@ export class Review{
   standalone: false,
   
   templateUrl: './home-list.component.html',
-  styleUrl: './home-list.component.css'
+  styleUrl: './home-list.component.css',
+  providers:[ReviewService]
 })
 export class HomeListComponent implements OnInit {
   constructor(private reviewservice :ReviewService){}
