@@ -1,12 +1,8 @@
 doctype html
 head
   title Gamer Head
-  script(src='/javascripts/jquery.min.js')
-  script(src='/javascripts/bootstrap.min.js')
-  link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
   link(rel='stylesheet' href='/stylesheets/font-awesome.min.css')
   link(rel='stylesheet' href='/stylesheets/bootstrap.css')
-  
   nav.navbar.navbar-expand-lg.bg-dark(data-bs-theme='dark')
     .container-fluid
       a.nav-link(href="/")
@@ -25,6 +21,7 @@ head
           li.nav-item
             a.nav-link(href='/SignUp') Sign up
             
-  body
-    block content
+body 
+  block content
+  block scripts
     

@@ -4,7 +4,7 @@ require('./games');
 require('./users');
 const connectDB = async () =>{
     try{
-        await mongoose.connect(ConStr,{ useNewUrlParser: true, useUnifiedTopology: true });
+        await mongoose.connect(ConStr,{});
         console.log("Mongose is Connected");
     }
     catch(err){
