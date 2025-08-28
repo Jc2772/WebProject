@@ -32007,7 +32007,7 @@ var ReviewService = class _ReviewService {
   constructor(http) {
     this.http = http;
   }
-  apiBaseurl = "http://localhost:3000/api";
+  apiBaseurl = "https://wsrender.onrender.com";
   FetchReviews() {
     return __async(this, null, function* () {
       const url = `${this.apiBaseurl}/reviews`;
